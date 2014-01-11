@@ -2,17 +2,17 @@
 $(call inherit-product, device/samsung/i9100/full_i9100.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # SGS2 overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/i9100
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/i9100
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := i9100
-PRODUCT_NAME := iokp_i9100
+PRODUCT_NAME := chronos_i9100
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9100
 
@@ -25,5 +25,5 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-   vendor/iokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
+   vendor/chronos/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
 

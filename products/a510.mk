@@ -1,18 +1,18 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := A510
 
-# Inherit some common IOKP stuff.
-$(call inherit-product, vendor/iokp/configs/common_tablet.mk)
+# Inherit some common Chronos stuff.
+$(call inherit-product, vendor/chronos/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/acer/a510/full_a510.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a510
-PRODUCT_NAME := iokp_a510
+PRODUCT_NAME := chronos_a510
 PRODUCT_BRAND := Acer
 PRODUCT_MODEL := A510
 PRODUCT_MANUFACTURER := Acer

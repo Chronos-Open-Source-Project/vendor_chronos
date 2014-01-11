@@ -2,19 +2,19 @@
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 #PRODUCT_PACKAGE_OVERLAYS += \
-#    vendor/iokp/overlay/samsung/d2-common \
-#    vendor/iokp/overlay/samsung/msm8960 \
-#    vendor/iokp/overlay/samsung/qcom
+#    vendor/chronos/overlay/samsung/d2-common \
+#    vendor/chronos/overlay/samsung/msm8960 \
+#    vendor/chronos/overlay/samsung/qcom
 
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_d2tmo
+PRODUCT_NAME := chronos_d2tmo
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2tmo
 PRODUCT_MODEL := SGH-T999
@@ -24,4 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2tmo TARGET_DEVICE=d2tmo BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

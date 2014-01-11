@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
 # Inherit IOKP common bits
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/tuna
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_maguro
+PRODUCT_NAME := chronos_maguro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
@@ -24,4 +24,4 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

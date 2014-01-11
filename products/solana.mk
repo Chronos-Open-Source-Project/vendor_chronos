@@ -2,15 +2,15 @@
 $(call inherit-product, device/motorola/solana/full_solana.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/iokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/solana
+DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/solana
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_solana
+PRODUCT_NAME := chronos_solana
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := solana
 PRODUCT_DEVICE_PREFIX := cdma
@@ -34,5 +34,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_DEFAULT_REGION=US \
 
 PRODUCT_COPY_FILES +=  \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
 

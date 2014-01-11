@@ -2,13 +2,13 @@
 $(call inherit-product, device/samsung/i9300/full_i9300.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_i9300
+PRODUCT_NAME := chronos_i9300
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := i9300
 PRODUCT_MODEL := GT-I9300
@@ -18,4 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERP
 PRODUCT_RELEASE_NAME := GT-I9300
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

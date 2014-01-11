@@ -1,18 +1,18 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Inherit IOKP common_tablet bits
-$(call inherit-product, vendor/iokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/chronos/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
 
 # deb Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/deb
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/deb
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
-PRODUCT_NAME := iokp_deb
+PRODUCT_NAME := chronos_deb
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
@@ -24,5 +24,5 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 

@@ -2,20 +2,20 @@
 $(call inherit-product, device/lge/e980/full_e980.mk)
 
 # Inherit AOSP device configuration
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/e980
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/e980
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e980
-PRODUCT_NAME := iokp_e980
+PRODUCT_NAME := chronos_e980
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-E980
 PRODUCT_MANUFACTURER := LGE

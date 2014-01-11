@@ -5,18 +5,18 @@ $(call inherit-product, device/samsung/t0ltetmo/full_t0ltetmo.mk)
 PRODUCT_RELEASE_NAME := t0ltetmo
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0ltetmo
-PRODUCT_NAME := iokp_t0ltetmo
+PRODUCT_NAME := chronos_t0ltetmo
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-T889
 PRODUCT_MANUFACTURER := samsung

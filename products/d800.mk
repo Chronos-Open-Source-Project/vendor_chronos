@@ -2,11 +2,11 @@
 $(call inherit-product-if-exists, device/lge/d800/iokp.mk)
 
 # d800 overlay
-# PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/d800
+# PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/d800
 
 # Device identifier
 PRODUCT_DEVICE := d800
-PRODUCT_NAME := iokp_d800
+PRODUCT_NAME := chronos_d800
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D800
 PRODUCT_MANUFACTURER := lge

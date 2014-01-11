@@ -2,15 +2,15 @@
 $(call inherit-product, device/samsung/d2usc/full_d2usc.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/iokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/d2-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/d2-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_d2usc
+PRODUCT_NAME := chronos_d2usc
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2usc
 PRODUCT_MODEL := SCH-R530U
@@ -20,4 +20,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2usc TARGET_DEVICE=d2usc BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

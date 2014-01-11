@@ -2,7 +2,7 @@
 $(call inherit-product-if-exists, device/lge/vs980/iokp.mk)
 
 # vs980 overlay
-# PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/vs980
+# PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/vs980
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs980

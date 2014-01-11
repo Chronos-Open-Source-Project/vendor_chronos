@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/jfltespr/full_jfltespr.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/iokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit common jf overlays
-#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+#DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/jf-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_jfltespr
+PRODUCT_NAME := chronos_jfltespr
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := jfltespr
 PRODUCT_MODEL := SPH-L720
@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltespr TARGET_DEVICE=jfltespr BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-       vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+       vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

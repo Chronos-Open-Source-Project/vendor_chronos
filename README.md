@@ -1,4 +1,4 @@
-[Infamous Open Kang Project]
+[Chronos Open Source Project]
 ====================================
 
 
@@ -11,19 +11,19 @@ Initialize:
 
 Init core trees without any device/kernel/vendor :
 
-    $ repo init -u https://github.com/IOKP/platform_manifest.git -b jb-mr2
+    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat
 
-Init repo with all devices, kernels and vendors supported by IOKP :
+Init repo with all devices, kernels and vendors supported by cosp :
 
-    $ repo init -u https://github.com/IOKP/platform_manifest.git -b jb-mr2 -g all,kernel,device,vendor
+    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,kernel,device,vendor
 
 Init repo only for a particular device
 
-    $ repo init -u https://github.com/IOKP/platform_manifest.git -b jb-mr2 -g all,-notdefault,<devicename>,<vendorname>
+    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,-notdefault,<devicename>,<vendorname>
 
-for example, to init only trees needed to build i9300
+for example, to init only trees needed to build jfltecan
 
-    $ repo init -u https://github.com/IOKP/platform_manifest.git -b jb-mr2 -g all,-notdefault,i9300,samsung
+    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,-notdefault,jfltecan,samsung
 
 sync repo
 
@@ -36,12 +36,12 @@ Building
 
 After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
 
-    . build/envsetup.sh && time brunch jfltetmo
+    . build/envsetup.sh && time brunch jfltecan
 
 
 You can also build (and see how long it took) for specific devices like this:
     
     chmod 755 build.sh
-    ./build.sh -d jfltetmo
+    ./build.sh -d jfltecan
 
 Remember to `make clobber` every now and then!

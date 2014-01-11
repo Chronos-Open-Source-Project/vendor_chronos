@@ -1,15 +1,15 @@
 # Inherit IOKP common_tablet bits
-$(call inherit-product, vendor/iokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/chronos/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/flo/full_flo.mk)
 
 # Flo Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/flo
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/flo
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := flo
-PRODUCT_NAME := iokp_flo
+PRODUCT_NAME := chronos_flo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
@@ -21,5 +21,5 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 

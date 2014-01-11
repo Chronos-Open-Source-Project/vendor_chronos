@@ -2,15 +2,15 @@
 $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
 # Inherit GSM common stuff.
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/d2-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/d2-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_d2att
+PRODUCT_NAME := chronos_d2att
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2att
 PRODUCT_MODEL := SGH-I747
@@ -20,4 +20,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2att TARGET_DEVICE=d2att BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

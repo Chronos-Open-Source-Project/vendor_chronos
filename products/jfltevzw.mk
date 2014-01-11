@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/iokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common Verizon Wireless Perms and Lib
-$(call inherit-product, vendor/iokp/configs/vzw.mk)
+$(call inherit-product, vendor/chronos/configs/vzw.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit common jf overlays
-#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+#DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/jf-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := iokp_jfltevzw
@@ -26,4 +26,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
 # boot animation
 PRODUCT_COPY_FILES += \
-       vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+       vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

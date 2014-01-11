@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/jfltecsp/full_jfltecsp.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit common jf overlays
-#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+#DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/jf-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_jfltecsp
+PRODUCT_NAME := chronos_jfltecsp
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := jfltecsp
 PRODUCT_MODEL := SCH-R970X
@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltecsp TARGET_DEVICE=jflteusc BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-       vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+       vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

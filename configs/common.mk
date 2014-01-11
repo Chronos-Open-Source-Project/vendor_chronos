@@ -1,10 +1,10 @@
 SUPERUSER_EMBEDDED := true
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/common
 
 # Common dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/dictionaries
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
@@ -57,27 +57,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/iokp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/iokp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/chronos/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/chronos/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/chronos/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
-    vendor/iokp/prebuilt/common/etc/persist.conf:system/etc/persist.conf
+    vendor/chronos/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+    vendor/chronos/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/iokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
+    vendor/chronos/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
+    vendor/chronos/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
-    vendor/iokp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
-    vendor/iokp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/iokp/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel \
-    vendor/iokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/iokp/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/chronos/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
+    vendor/chronos/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
+    vendor/chronos/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/chronos/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel \
+    vendor/chronos/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/chronos/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -110,33 +110,33 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Inherit common build.prop overrides
--include vendor/iokp/configs/common_versions.mk
+-include vendor/chronos/configs/common_versions.mk
 
 # T-Mobile theme engine
--include vendor/iokp/configs/themes_common.mk
+-include vendor/chronos/configs/themes_common.mk
 
 # common boot animation
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # World APNs
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    vendor/chronos/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# IOKP RELEASE VERSION
-IOKP_VERSION_MAJOR = v1
-# IOKP_VERSION_MINOR = 0
+# CHRONOS RELEASE VERSION
+CHRONOS_VERSION_MAJOR = v1
+# CHRONOS_VERSION_MINOR = 0
 
 
 
-VERSION := $(IOKP_VERSION_MAJOR)
+VERSION := $(CHRONOS_VERSION_MAJOR)
 
 ifeq ($(DEVELOPER_VERSION),true)
-    IOKP_VERSION := dev_$(BOARD)-$(VERSION)
+    CHRONOS_VERSION := dev_$(BOARD)-$(VERSION)
 else
-    IOKP_VERSION := $(TARGET_PRODUCT)-$(VERSION)
+    CHRONOS_VERSION := $(TARGET_PRODUCT)-$(VERSION)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=$(IOKP_VERSION) \
+    ro.modversion=$(CHRONOS_VERSION) \
     ro.iokp.version=$(VERSION) 

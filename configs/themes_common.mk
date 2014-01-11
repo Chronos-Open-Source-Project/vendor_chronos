@@ -5,4 +5,4 @@ PRODUCT_PACKAGES += \
        com.tmobile.themes 
 
 PRODUCT_COPY_FILES += \
-       vendor/iokp/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/chronos/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml

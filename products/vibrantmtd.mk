@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
 # Inherit Aries-common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/aries-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/aries-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_vibrantmtd
+PRODUCT_NAME := chronos_vibrantmtd
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := vibrantmtd
 PRODUCT_MODEL := SGH-T959
@@ -23,4 +23,4 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip

@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit IOKP common bits
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/tuna
 
 # CDMATools
-PRODUCT_PACKAGE_OVERLAYS += vendor/iokp/overlay/CDMATools
+PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/CDMATools
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_toroplus
+PRODUCT_NAME := chronos_toroplus
 PRODUCT_BRAND := Google
 PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
@@ -25,4 +25,4 @@ PRODUCT_PACKAGES += \
     CDMATools
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

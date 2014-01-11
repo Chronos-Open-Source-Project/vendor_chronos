@@ -5,12 +5,12 @@ $(call inherit-product, device/lge/vs920/full_vs920.mk)
 PRODUCT_RELEASE_NAME := Spectrum
 
 # Inherit CDMA common stuff
-$(call inherit-product, vendor/iokp/configs/cdma.mk)
+$(call inherit-product, vendor/chronos/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/iprj-common
+DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/iprj-common
 
 # boot animation
 PRODUCT_COPY_FILES += \
@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs920
-PRODUCT_NAME := iokp_vs920
+PRODUCT_NAME := chronos_vs920
 PRODUCT_BRAND := Verizon
 PRODUCT_MODEL := VS920 4G
 PRODUCT_MANUFACTURER := LGE

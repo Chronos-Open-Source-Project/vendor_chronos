@@ -2,15 +2,15 @@
 $(call inherit-product, device/motorola/umts_spyder/full_umts_spyder.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/iokp/overlay/umts_spyder
+DEVICE_PACKAGE_OVERLAYS += vendor/chronos/overlay/umts_spyder
 
 # Setup device specific product configuration.
-PRODUCT_NAME := iokp_umtsspyder
+PRODUCT_NAME := chronos_umtsspyder
 PRODUCT_BRAND := moto
 PRODUCT_DEVICE := umts_spyder
 PRODUCT_MODEL := XT910
@@ -33,5 +33,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_DEFAULT_REGION=US \
 
 PRODUCT_COPY_FILES +=  \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
 

@@ -1,7 +1,7 @@
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/iokp/configs/gsm.mk)
+$(call inherit-product, vendor/chronos/configs/gsm.mk)
 
-$(call inherit-product, vendor/iokp/configs/common.mk)
+$(call inherit-product, vendor/chronos/configs/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/m7ul/full_m7ul.mk)
@@ -10,11 +10,11 @@ $(call inherit-product, device/htc/m7ul/full_m7ul.mk)
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m7 BUILD_FINGERPRINT="htc/m7_google/m7:4.3/JWR66V.H10/230993:user/release-keys" PRIVATE_BUILD_DESC="3.06.1700.10 CL230993 release-keys"
 
 PRODUCT_COPY_FILES += \
-    vendor/iokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/chronos/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 
 # Device naming
 PRODUCT_DEVICE := m7ul
-PRODUCT_NAME := iokp_m7ul
+PRODUCT_NAME := chronos_m7ul
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := HTC One
 PRODUCT_MANUFACTURER := HTC

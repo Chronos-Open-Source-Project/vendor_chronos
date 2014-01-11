@@ -2,14 +2,14 @@
 PRODUCT_RELEASE_NAME := n8013
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/iokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/chronos/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/n8013/full_n8013.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n8013
-PRODUCT_NAME := iokp_n8013
+PRODUCT_NAME := chronos_n8013
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N8013
 PRODUCT_MANUFACTURER := samsung
