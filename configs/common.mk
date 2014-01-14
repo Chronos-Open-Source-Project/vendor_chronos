@@ -139,4 +139,4 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(CHRONOS_VERSION) \
-    ro.iokp.version=$(VERSION) 
+    ro.chronos.version=$(VERSION) 
