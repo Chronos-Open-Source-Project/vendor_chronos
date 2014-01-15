@@ -200,13 +200,13 @@ cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo -e
-echo -e $CL_RED"     _________  __ __ ____   "$CL_RST
-echo -e $CL_RED"    /_  _/ __ \/ //_// __ \  "$CL_RST
-echo -e $CL_RED"     / // / / / ,<  / /_/ /  "$CL_RST
-echo -e $CL_RED"   _/ // /_/ / /| |/ ____/   "$CL_RST
-echo -e $CL_RED"  /___/\____/_/ |_/_/        "$CL_RST
-echo -e $CL_RED"                             "$CL_RST
-echo -e $CL_RED"           KitKat            "$CL_RST
+echo -e $CL_RED"   ___ _                                "$CL_RST
+echo -e $CL_RED"  / __\ |__  _ __ ___  _ __   ___  ___  "$CL_RST
+echo -e $CL_RED" / /  | '_ \| '__/ _ \| '_ \ / _ \/ __| "$CL_RST
+echo -e $CL_RED"/ /___| | | | | | (_) | | | | (_) \__ \ "$CL_RST
+echo -e $CL_RED"\____/|_| |_|_|  \___/|_| |_|\___/|___/ "$CL_RST
+echo -e $CL_RED"                                        "$CL_RST
+echo -e $CL_RED"                 KitKat                 "$CL_RST
 echo -e
 echo -e $CL_CYN"===========-Package complete-==========="$CL_RST
 echo -e $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
