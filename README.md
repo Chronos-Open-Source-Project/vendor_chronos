@@ -11,19 +11,19 @@ Initialize:
 
 Init core trees without any device/kernel/vendor :
 
-    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat
+    $ repo init -u https://github.com/ChronosRom/platform_manifest.git -b kitkat
 
 Init repo with all devices, kernels and vendors supported by cosp :
 
-    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,kernel,device,vendor
+    $ repo init -u https://github.com/ChronosRom/platform_manifest.git -b kitkat -g all,kernel,device,vendor
 
 Init repo only for a particular device
 
-    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,-notdefault,<devicename>,<vendorname>
+    $ repo init -u https://github.com/ChronosRom/platform_manifest.git -b kitkat -g all,-notdefault,<devicename>,<vendorname>
 
 for example, to init only trees needed to build jfltecan
 
-    $ repo init -u https://github.com/Chronos-Open-Source-Project/platform_manifest.git -b kitkat -g all,-notdefault,jfltecan,samsung
+    $ repo init -u https://github.com/ChronosRom/platform_manifest.git -b kitkat -g all,-notdefault,jfltecan,samsung
 
 sync repo
 
