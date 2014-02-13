@@ -106,9 +106,6 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # Inherit common build.prop overrides
 -include vendor/chronos/configs/common_versions.mk
 
-# T-Mobile theme engine
--include vendor/chronos/configs/themes_common.mk
-
 # common boot animation
 PRODUCT_COPY_FILES += \
     vendor/chronos/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
