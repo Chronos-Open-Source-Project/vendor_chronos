@@ -6,11 +6,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/common
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/dictionaries
 
-# ParanoidAndroid Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
-
-
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
