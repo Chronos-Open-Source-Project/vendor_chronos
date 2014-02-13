@@ -16,19 +16,13 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     libemoji \
     LatinImeDictionaryPack \
-    Microbes \
-    ROMControl \
     Stk \
     su \
-    Torch \
     Apollo \
-    PerformanceControl \
-    InfamousTools \
     LockClock \
-    Focal \
     VoicePlus \
     DashClock \
-    CMFileManager
+
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
