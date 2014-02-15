@@ -30,25 +30,15 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
-    windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
-# Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
-    dalvik.vm.debug.alloc=0
-
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/chronos/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/chronos/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/chronos/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Installer
 PRODUCT_COPY_FILES += \
