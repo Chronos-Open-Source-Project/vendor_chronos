@@ -7,16 +7,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/chronos/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
+    AdAway \
     BluetoothExt \
     CellBroadcastReceiver \
-    libemoji \
     LatinImeDictionaryPack \
     Stk \
     su \
     Apollo \
     LockClock \
-    VoicePlus \
-    DashClock \
 
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
