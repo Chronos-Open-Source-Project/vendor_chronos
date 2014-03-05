@@ -1,5 +1,4 @@
 add_lunch_combo chronos_mako-userdebug
 add_lunch_combo chronos_hercules-userdebug
-add_lunch_combo chronos_jfltecan-userdebug
-add_lunch_combo chronos_jfltetmo-userdebug
-add_lunch_combo chronos_jflteatt-userdebug
+add_lunch_combo chronos_jflte-userdebug
+
